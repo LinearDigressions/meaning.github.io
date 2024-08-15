@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-baseurl: /meaning.github.io
+baseurl: /meaningBlog
 url: http://lineardigressions.github.io
 
 title: The Mystery of Meaning
