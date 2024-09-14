@@ -1,91 +1,18 @@
+Summary of Deployment
 
+## Overview
 
-**Change Management Process**
-==========================
+There are two folders. jekyll_site is the folder with the actual site. docs is the folder with the generated site.
 
-This document outlines the process for making changes to the codebase, testing them, and deploying them to production.
+There is also a custom theme called customtheme. This has it's own build of the site as well.
 
-**Step 1: Create a Feature Branch**
---------------------------------
+## Deployment
+There are two main branches: master and develop
 
-* Create a new branch from the `develop` branch using the following command: `git checkout -b feature/my-new-feature`
-* Make changes to the codebase as needed
+For adding a new feature to the site use feature/<name> branch from develop.
 
-**Step 2: Commit Changes**
--------------------------
+If you want to update the actual website, you will need to build the site and then copy it over to the docs folder using the copy_site.sh script.
 
-* Commit changes to the feature branch using the following command: `git commit -m "My new feature"`
-* Make sure to follow the commit message guidelines
+## Local Development
 
-**Step 3: Push Changes to Remote**
----------------------------------
-
-* Push changes to the remote repository using the following command: `git push origin feature/my-new-feature`
-
-**Step 4: Create a Pull Request**
--------------------------------
-
-* Create a new pull request from the feature branch to the `develop` branch
-* Make sure to include a clear and concise description of the changes made
-
-**Step 5: Review and Test**
--------------------------
-
-* Review the pull request to ensure that the changes meet the coding standards and requirements
-* Test the changes to ensure that they work as expected
-
-**Step 6: Merge into Develop**
----------------------------
-
-* Merge the pull request into the `develop` branch
-* Make sure to resolve any conflicts that may arise during the merge process
-
-**Step 7: Test in Staging**
--------------------------
-
-* Deploy the changes to the staging environment
-* Test the changes to ensure that they work as expected in the staging environment
-
-**Step 8: Create a Pull Request to Master**
------------------------------------------
-
-* Create a new pull request from the `develop` branch to the `master` branch
-* Make sure to include a clear and concise description of the changes made
-
-**Step 9: Review and Test**
--------------------------
-
-* Review the pull request to ensure that the changes meet the coding standards and requirements
-* Test the changes to ensure that they work as expected
-
-**Step 10: Merge into Master**
----------------------------
-
-* Merge the pull request into the `master` branch
-* Make sure to resolve any conflicts that may arise during the merge process
-
-**Step 11: Deploy to Production**
--------------------------------
-
-* Deploy the changes to the production environment
-* Test the changes to ensure that they work as expected in the production environment
-
-**Commit Message Guidelines**
----------------------------
-
-* Use the present tense (e.g. "Add feature" instead of "Added feature")
-* Use the imperative mood (e.g. "Fix bug" instead of "Fixes bug")
-* Limit the first line to 50 characters or less
-* Use a blank line between the first line and the body of the commit message
-* Use bullet points or numbered lists in the body of the commit message
-
-**Example Commit Message**
--------------------------
-
-```
-Add new feature to allow users to upload images
-
-* Add new endpoint to handle image uploads
-* Update frontend to display uploaded images
-* Fix bug where images were not being displayed correctly
-```
+To run the site use the commmand `bundle exec jekyll serve` in the jekyll_site folder. This will serve the site in the browser while also updating the site on changes.
