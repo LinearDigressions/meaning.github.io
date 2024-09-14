@@ -1,7 +1,6 @@
 Summary of Deployment
 
 ## Overview
-
 There are two folders. jekyll_site is the folder with the actual site. docs is the folder with the generated site.
 
 There is also a custom theme called customtheme. This has it's own build of the site as well.
