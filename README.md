@@ -10,7 +10,7 @@ There are two main branches: master and develop
 
 For adding a new feature to the site use feature/<name> branch from develop.
 
-If you want to update the actual website, you will need to build the site and then copy it over to the docs folder using the copy_site.sh script.
+If you want to update the actual website, you will need to build the site and then copy it over to the docs folder using the build_and_copy_site.sh script.
 
 ## Local Development
 

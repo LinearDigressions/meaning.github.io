@@ -27,4 +27,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - copy_site.sh
+  - build_and_copy_site.sh
