@@ -28,3 +28,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - build_and_copy_site.sh
+  - custometheme
